@@ -1,2 +1,2 @@
 # robust-OT-RPW
-Motivation taken from : https://arxiv.org/pdf/2302.01237, code is modified from : https://github.com/sbnietert/robust-OT
+Motivation taken from : https://arxiv.org/pdf/2212.08049, code is modified from : https://github.com/nbonneel/spot
