@@ -1310,7 +1310,9 @@ public:
             }
         }
         
-        return final_rpw_cost / std::max(1LL, current_matched_mass);
+        // return final_rpw_cost / std::max(1LL, current_matched_mass);
+		// MATHEMATICAL FIX: Take the 1/p root (square root) of the final averaged cost
+        return std::sqrt(final_rpw_cost / std::max(1LL, current_matched_mass));
     }
 
 	template<int DIM, typename T>  // Mbary should be less than min_i(bary[i].size())

@@ -882,7 +882,9 @@ public:
         free_simd(projHist1);
         free_simd(projHist2);
 
-        return d*2.0/niter;
+        // return d*2.0/niter;
+		// MATHEMATICAL FIX: Take the 1/p root (square root) of the final averaged cost
+        return std::sqrt(d * 2.0 / niter);
     }
 
 
